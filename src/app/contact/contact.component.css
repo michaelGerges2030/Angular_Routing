@@ -1,0 +1,12 @@
+.line{
+    background-color: #233240;
+    width: 80px;
+    height: 4px;
+}
+.form-control{
+    box-shadow: none;
+}
+.btn{
+    background-color: #1abc9c;
+    cursor: pointer;
+}

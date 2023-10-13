@@ -1,0 +1,10 @@
+nav{
+    transition: 0.8s;
+}
+.nav-link{
+    color: white;
+    font-weight: bold;
+    font-size:larger;
+    margin-right: 1rem;
+    text-transform: uppercase;
+}

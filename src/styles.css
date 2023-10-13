@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+.color{
+    background-color: #233240;
+}
+.test{
+    background-color: #1abc9c;
+    border-radius: 10px;
+}

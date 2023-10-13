@@ -1,0 +1,33 @@
+<div class="portfolioBody py-2 text-center mt-5">
+  <div class="pt-5 mt-5">
+    <h1 class="fw-bold">PORTFOLIO COMPONENT</h1>
+    <div class="d-flex justify-content-center py-4">
+      <div class="line me-3"></div>
+      <i class="fa-solid fa-star fa-lg"></i>
+      <div class="line ms-3"></div>
+    </div>
+  </div>
+
+  <div class="portfolioSections">
+    <div class="container">
+        <div class="row g-5 py-4">
+            <div class="col-lg-4 col-md-6" *ngFor="let src of srcs">
+                <div class="position-relative overflow-hidden rounded-3">
+                    <img [src]="src" alt="House" class="img w-100 rounded-2">
+                    
+                    <div (click)="flag = false; clickedSrc = src" class="layer position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-plus fa-6x text-white"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- true hide 
+                 false show -->
+                
+            <div  (click)="hideImg($event.target, img)" [class.d-none]="flag" class="clicked bg-primary bg-opacity-50 position-fixed w-100 h-100 start-0 bottom-0 d-flex justify-content-center align-items-center">
+                <img [src]="clickedSrc" alt="image" #img>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
